@@ -17,7 +17,7 @@ $y = 40
 
 def start
   $running = true
-  $gamespeed = 0.25
+  $gamespeed = 0.175
   @handler = Handler.new
   @graphics = Graphics.new($x, $y)
   build_walls
@@ -57,7 +57,7 @@ end
 
 def score_plus
   $score += 1
-  $gamespeed *= 0.95
+  $gamespeed *= 0.9875
 end
 
 def game_over
